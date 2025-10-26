@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *
+        {
+            background-color: hsl(240, 67%, 58%);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Course Registration Form</h1>
+    <form action="https://google.com">
+        <fieldset style="width: 420px;">
+            <legend>Personal Details:</legend>
+            <table>
+                <tr>
+                    <td><label>First Name:</label></td>
+                    <td><input type="text" name="Name" placeholder="Ex:Bharath" size="15" maxlength="10"></td>
+                </tr>
+                <tr>
+                    <td><label>Surname:</label></td>
+                    <td><input type="text" name="LN" placeholder="Ex:H M" size="15" maxlength="10"></td>
+                </tr>
+                <tr>
+                    <td> <label>Mobile Number:</label></td>
+                    <td> <input type="tel" name="Number" placeholder="Ex:984-567-7890" size="15" maxlength="10"></td>
+                </tr>
+                <tr>
+                    <td><label>Email:</label></td>
+                    <td> <input type="email" name="Mail" placeholder="Ex:bharath@gmail.com" size="15"></td>
+                </tr>
+                <tr>
+                    <td><label>Password:</label></td>
+                    <td> <input type="password" name="pwd" placeholder="min 5 charaters" minlength="10" size="15"></td>
+                </tr>
+                <tr>
+                    <td> <label>Confirm Password:</label></td>
+                    <td><input type="password" name="cwpwd" placeholder="min 5 charaters" minlength="10" size="15"></td>
+                </tr>
+                <tr>
+                    <td> <label>DOB:</label></td>
+                    <td><input type="date" name="Date"></td>
+                </tr>
+                <tr>
+                    <td><label>Gender:</label></td>
+                    <td><input type="radio" name="Gender" value="M">Male
+                        <input type="radio" name="Gender" value="M">Female
+                        <input type="radio" name="Gender" value="M">Custom
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Select Country:</label></td>
+                    <td> <select name="Country">
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="China">China</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label>Upload Picture:</label></td>
+                    <td><input type="file" name="img"></td>
+                </tr>
+            </table>
+            <input type="reset">
+        </fieldset> 
+
+        <fieldset style="width: 420px;">
+            <legend>Course Details:</legend>
+            <table>
+                <tr>
+                    <td><label>Select Course:</label></td>
+                    <td><select name="Course">
+                    <option value="JFS">Java Full Stack</option>
+                    <option value="PFS">Python Full Stack</option>
+                    <option value="CJ">Core Java</option>
+                    <option value="PDS">Python for Data Science</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label>Delivery Mode:</label></td>
+                    <td><input type="checkbox" name="online" value="ON">Online <input type="checkbox" name="offline" value="OFF">Offline</td>
+                </tr>
+                <tr>
+                    <td><label>Comments:</label></td>
+                    <td><textarea rows="4" cols=" 40"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+        <img src="images/submit.png" height="75" width="75" type="input">
+    </form> 
+
+</body>
+</html>
